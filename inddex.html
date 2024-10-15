@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Images A </title>
-    <link rel="stylesheet" href="style.css">
+    <title>显示图片</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* 可选：设置背景颜色 */
+        }
+        img {
+            max-width: 100%; /* 确保图片不会超出屏幕宽度 */
+            max-height: 100%; /* 确保图片不会超出屏幕高度 */
+            object-fit: contain; /* 确保图片保持比例并完整显示 */
+        }
+    </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="images/a.jpg" alt="Image A" class="image-a">
-    </div>
+    <img src="a.jpg" alt="显示的图片">
 </body>
 </html>
